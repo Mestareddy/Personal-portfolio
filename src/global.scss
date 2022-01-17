@@ -1,0 +1,15 @@
+$color1: rgb(7, 10, 57);
+$color2: rgb(255, 255, 255);
+$color3: crimson;
+
+$font1: 'Moon Dance', cursive;
+$font2: "Roboto", sans-serif;
+$font3: "Roboto Condensed", sans-serif;
+
+$width: 768px;
+
+@mixin mobile {
+    @media (max-width: #{$width}) {
+        @content;
+    }
+}

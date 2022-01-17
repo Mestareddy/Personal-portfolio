@@ -1,0 +1,85 @@
+@import "../../global.scss";
+
+.contact {
+  background-color: $color2;
+  display: flex;
+
+  @include mobile {
+    flex-direction: column;
+  }
+
+  .left {
+    flex: 1;
+    overflow: hidden;
+
+    img {
+      height: 100%;
+    }
+  }
+  .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .innerContainer {
+      height: 90%;
+      width: 70%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      flex-direction: column;
+      background-color: rgba(7, 10, 57, 0.1);
+      border-radius: 20px;
+
+      h2 {
+        font-size: 30px;
+      }
+      form {
+        width: 70%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+
+        input {
+          width: 90%;
+          height: 8%;
+          font-size: 14px;
+          border-radius: 5px;
+          border: 1px solid $color1;
+        }
+
+        textarea {
+          border-radius: 5px;
+          min-width: 90%;
+          max-width: 90%;
+          min-height: 50%;
+          max-height: 50%;
+          font-size: 14px;
+          border: 1px solid $color1;
+        }
+
+        button {
+          width: 150px;
+          height: 30px;
+          color: $color2;
+          background-color: $color3;
+          border: 1px solid $color3;
+          border-radius: 10px;
+          font-weight: 500;
+          cursor: pointer;
+
+          &:hover,&:focus {
+            background-color: $color2;
+            color: $color3;
+            outline: none;
+          }
+        }
+      }
+    }
+  }
+}
